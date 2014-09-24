@@ -1,3 +1,7 @@
+---
+layout: page
+title: Resumé
+---
 <div class="box-download">
 **download**
 pdf: [Walker, Devon - Resume.pdf](http://www.devonwa.com/wp-content/uploads/2014/09/Walker-Devon-Resume.pdf)
