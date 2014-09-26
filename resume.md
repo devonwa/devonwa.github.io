@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Resumé
+title: Resume
 ---
-<div class="box-download">
+<!--<div class="box-download">
 **download**
 pdf: [Walker, Devon - Resume.pdf](http://www.devonwa.com/wp-content/uploads/2014/09/Walker-Devon-Resume.pdf)
 tex: [Walker, Devon - Resume.tex](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex)
-</div>
+</div>-->
 
 ## Devon S. Walker
 
