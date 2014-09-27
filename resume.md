@@ -19,8 +19,8 @@ Philadelphia, PA
 _Process Automation Engineer_ - October 2012 to Present
 
 *   Providing on-site support for the research and development group within a major pharmaceutical company since January 2013.
-*   *   Managing projects for integrating new technologies into a prototype process.
-*   *   Recording experiment data into a database and using statistical analysis to develop further experiments and provide presentations to superiors.
+  *   Managing projects for integrating new technologies into a prototype process.
+  *   Recording experiment data into a database and using statistical analysis to develop further experiments and provide presentations to superiors.
 *   Developed an HMI application for a bakery with over twelve hundred I/O points spanning three synchronous control system PLCs.
 
 **Classic Industries** - Latrobe, PA
