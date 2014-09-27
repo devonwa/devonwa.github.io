@@ -1,0 +1,40 @@
+---
+---
+
+$color-primary: #9b2221;
+$color-background: #fafaf2;
+$color-text: #202020;
+
+body {
+    background-color: $color-background;
+    color: $color-text;
+    //background-image: url("/static/image/halftone.png");
+    //background-repeat: repeat;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+a, a:hover {
+    color: $color-primary;
+}
+
+.sidebar {
+    //border-color: $color-primary;
+    border-right: 10px solid;
+    border-image: url(/static/image/navborder.png) 0 50 0 0 repeat;
+    padding-left: 10px;
+}
+
+.sidebar-brand {
+    color: $color-text;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 0px;
+    text-indent: 0px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-top: 10px;
+}
