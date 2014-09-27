@@ -13,6 +13,7 @@ author:
   name: Devon Walker
   url: https://twitter.com/devwalker
   email: devon@devonwa.com
+paginate: 5
 
 # Custom vars
 version:
