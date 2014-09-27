@@ -11,7 +11,7 @@ If your like me, you use around 10 sites every day, and another 20 or so sporadi
 
 Let's say a big company, like [Adobe][] or [LinkedIn][], gets hacked and your account info is leaked. Now you need to figure out how many other sites use the same username and password and change them. There is no chance I'm remembering that. The only solution is to have a unique password for that site, so when it does get hacked, I only need to change that one password.
 
-_\* One great site I found while researching this article is [haveibeenpwned.com][] by Troy Hunt._
+<small>\* One great site I found while researching this article is [haveibeenpwned.com][] by Troy Hunt.</small>
 
 
 ## Introducing the password manager
