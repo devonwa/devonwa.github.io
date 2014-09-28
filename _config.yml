@@ -1,7 +1,8 @@
 # Site vars
 name: "Devon Walker"
 url: http://devonwa.com
-highlighter: pygments 
+highlighter: pygments
+lsi: false
 markdown: kramdown
 permalink: pretty
 paginate: 5

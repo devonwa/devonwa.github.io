@@ -5,7 +5,7 @@ title: CV
 
 <style>
 h2 {
-    color: red;
+    color: #9b2221;
 }
 </style>
 
