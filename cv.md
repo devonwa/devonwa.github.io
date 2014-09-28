@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Curriculum vitae
+title: CV
 ---
 <!--<div class="box-download">
 **download**

@@ -1,20 +1,22 @@
 ---
 layout: default
-title: Home
+title: Blog
 ---
 
-<ul>
-    {% for post in site.posts %}
-    <li style="list-style-type: none">
-        <h3>
-        <a href="{{ post.url }}"> {{ post.title }} </a>
-        <small>
-            {{ post.date | date_to_string }}
-        </small>
-        </h3>
-        <p>
-            {{ post.content }}
-        </p>
-    </li>
-    {% endfor %}
-</ul>
+<div class="post-list">
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <h2>
+            <a href="{{ post.url }}"> {{ post.title }} </a>
+            <small>
+                {{ post.date | date_to_string }}
+            </small>
+            </h2>
+            <p>
+                {{ post.content }}
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
