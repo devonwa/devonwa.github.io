@@ -1,18 +1,9 @@
-# Dependencies
-markdown: redcarpet
-highlighter: pygments 
-
-# Permalinks
-permalink: pretty
-
-# Setup
-title: Devon Walker
+# Site vars
+name: "Devon Walker"
 url: http://devonwa.com
-base_url: /
-author:
-  name: Devon Walker
-  url: https://twitter.com/devwalker
-  email: devon@devonwa.com
+highlighter: pygments 
+markdown: kramdown
+permalink: pretty
 paginate: 5
 
 # Custom vars
