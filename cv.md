@@ -13,7 +13,7 @@ tex: [Walker, Devon - Resume.tex](https://github.com/devonwa/latex-resume/blob/m
 </style>
 
 
-# Devon S. Walker
+# Devon Walker
 [PDF](/static/page/cv/Devon-Walker-Resume.pdf) &#124;
 [source](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex) <br>
 [email](http://www.google.com/recaptcha/mailhide/d?k=01C-sGO2dlp9QhL6XGA08G8A==&c=dyFPr1gMFSitT602ZrMFhsq6MW5Tn_ikXCsGQl2rge8=) &#124;
