@@ -9,7 +9,7 @@ How many passwords do you have? Three? _Four_? A password manager lets you have 
 
 ## Password reuse - the ease and cost
 
-If your like me, you use around 10 sites every day, and another 20 or so sporadically. There's also that untold number of sites left in the dust after you pillaged their free trial or something. But even though you don't use them, they still have one of your rotated passwords, your username, and probably your email address (which doesn't use the same password _right_?).
+If you're like me, you use around 10 sites every day, and another 20 or so sporadically. There's also that untold number of sites left in the dust after you pillaged their free trial or something. But even though you don't use them, they still have one of your rotated passwords, your username, and probably your email address (which doesn't use the same password _right_?).
 
 Let's say a big company, like [Adobe][] or [LinkedIn][], gets hacked and your account info is leaked. Now you need to figure out how many other sites use the same username and password and change them. There is no chance I'm remembering that. The only solution is to have a unique password for that site, so when it does get hacked, I only need to change that one password.
 
