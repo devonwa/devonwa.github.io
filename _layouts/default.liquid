@@ -8,6 +8,17 @@ nav-links:
     href: /
 #  - text: Archives
 #    href: #
+
+social:
+  - name: LinkedIn
+    href: https://www.linkedin.com/in/devonwalker
+    icon: <i class="fa fa-linkedin-square fa-2x"></i>
+  - name: Twitter
+    href: https://twitter.com/devwalk
+    icon: <i class="fa fa-twitter-square fa-2x"></i>
+  - name: GitHub
+    href: https://github.com/devonwa
+    icon: <i class="fa fa-github-square fa-2x"></i>
 ---
 
 <!DOCTYPE html>
@@ -45,6 +56,11 @@ nav-links:
                       </li>
                   {% endfor %}
                   </ul>
+                  <div class="navbar-text navbar-right">
+                      {% for s in page.social %}
+                          <a href="{{ s.href }}" alt="{{ s.name }}">{{ s.icon }}</a> &nbsp;
+                      {% endfor %}
+                  </div>
                 </div>
             
             </div>
