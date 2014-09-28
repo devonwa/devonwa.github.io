@@ -16,16 +16,20 @@ a, a:hover {
     color: $color-primary;
 }
 
-.post-list ul {
+#post-list {
     padding-left: 0px;
 }
 
-.post-list li {
+#post-list-item {
     list-style-type: none;
 }
 
 .navbar {
     background-color: $color-background;
-    border: 0 0 100px 0 solid;
+    border-bottom: 1px solid;
     border-color: $color-text;
+}
+
+.navbar-default .navbar-brand {
+    color: $color-text;
 }

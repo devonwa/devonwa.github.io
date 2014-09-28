@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: CV
 ---
 <!--<div class="box-download">
@@ -8,12 +8,18 @@ pdf: [Walker, Devon - Resume.pdf](http://www.devonwa.com/wp-content/uploads/2014
 tex: [Walker, Devon - Resume.tex](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex)
 </div>-->
 
-## Devon S. Walker
+<style>
 
-Email: devon at devonwa.com
-Philadelphia, PA
+</style>
 
-### Experience
+
+# Devon S. Walker
+[PDF](/static/page/cv/Devon-Walker-Resume.pdf) &#124;
+[source](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex) <br>
+[email](http://www.google.com/recaptcha/mailhide/d?k=01C-sGO2dlp9QhL6XGA08G8A==&c=dyFPr1gMFSitT602ZrMFhsq6MW5Tn_ikXCsGQl2rge8=) &#124;
+(717) 304--2186 <br>
+
+## Experience
 
 **EZSoft, Inc.** - Malvern, PA
 _Process Automation Engineer_ - October 2012 to Present
@@ -43,7 +49,7 @@ _Chemical Engineer Internship_ - May 2011 to December 2011
 **The Cartilage Restoration Center, UPMC**  - Pittsburgh, PA
 _Website Developer_ - August 2010 to April 2011
 
-### Education
+## Education
 
 **University of Pittsburgh** - April 2012
 - Bachelor of Science in Chemical Engineering. GPA 3.3/4.0
@@ -51,12 +57,12 @@ _Website Developer_ - August 2010 to April 2011
 
 **Fundamentals of Engineering Exam (EIT)** - April 2012
 
-### Skills
+## Skills
 
 *   **Technology** - Proficient in Aspen Engineering Suite, Process Modeling, Process Optimization, Microsoft Office, Cross-disciplinary Design, Linux, Virtual Machines, Ethernet Networking. Familiar with AutoCAD, SolidWorks.
 *   **Programming Languages** - Proficient in Matlab, Simulink, SQL, C#, LabView, Excel VBA, Python, Java, PLC Ladder Logic, Latex.
 
-### Affiliations
+## Affiliations
 
 *   **American Institute of Chemical Engineers** - 2010 to Present
 *   **Order of the Engineer** - 2012 to Present
