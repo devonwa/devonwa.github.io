@@ -20,7 +20,7 @@ social:
     href: https://github.com/devonwa
     icon: <i class="fa fa-github-square fa-2x"></i>
   - name: Email
-    href: devon@devonwa.com
+    href: mailto:devon@devonwa.com
     icon: <i class="fa fa-envelope fa-2x"></i>
 ---
 
@@ -61,7 +61,7 @@ social:
                   </ul>
                   <div class="navbar-text navbar-right">
                       {% for s in page.social %}
-                          <a href="{{ s.href }}" alt="{{ s.name }}">{{ s.icon }}</a> &nbsp;
+                          <a href="{{ s.href }}" title="{{ s.name }}" alt="{{ s.name }}">{{ s.icon }}</a> &nbsp;
                       {% endfor %}
                   </div>
                 </div>
