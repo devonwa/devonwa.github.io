@@ -1,12 +1,9 @@
 # Site vars
-name: "Devon Walker"
-url: http://devonwa.com
 highlighter: pygments
 lsi: false
 markdown: kramdown
 permalink: pretty
 paginate: 5
-encoding: utf-8
 
 # Custom vars
 version:
