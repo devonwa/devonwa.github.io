@@ -1,13 +1,9 @@
 ---
 layout: post
 title: Use a password manager
-tags: Technology, Password, Keepass
-description: Learn why a password manager is necessary part of the modern web user's toolkit. Implement Keepass2 as your new password assistant.
+tags: Efficiency, Technology
+description: Learn why a password manager is a necessary part of the modern web user's toolkit and implement Keepass2 as your new password assistant.
 ---
-How many passwords do you have? Three? _Four_? A password manager lets you have hundreds.
-
-
-## Password reuse - the ease and cost
 
 If you're like me, you use around 10 sites every day, and another 20 or so sporadically. There's also that untold number of sites left in the dust after you pillaged their free trial or something. But even though you don't use them, they still have one of your rotated passwords, your username, and probably your email address (which doesn't use the same password _right_?).
 
