@@ -3,7 +3,7 @@ highlighter: pygments
 lsi: false
 markdown: kramdown
 permalink: pretty
-paginate: 5
+#paginate: 5
 
 # Custom vars
 version:

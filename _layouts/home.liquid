@@ -1,0 +1,33 @@
+---
+layout: default
+img-src: /static/image/2014-10-05-me-tall-300h.png
+---
+
+<div class="row">
+    <div class="col-sm-8">
+        {{ content }}
+    </div>
+    <div class="col-sm-4 hidden-xs text-right" id="home-image">
+        <img src="{{ page.img-src }}" class="img-rounded">
+    </div>
+</div>
+
+<h2>Recent Articles</h2>
+
+<div>
+    <ul id="post-list">
+        {% for post in site.posts %}
+        <li id="post-list-item">
+            <h3>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <small>
+                {{ post.date | date_to_string }}
+            </small>
+            </h3>
+            <p>
+                {{ post.content | strip_html | truncatewords: 60 }}
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
