@@ -9,7 +9,6 @@ h2 {
 }
 </style>
 
-
 # Devon Walker
 [PDF](/static/page/cv/Devon-Walker-Resume.pdf) &#124;
 [source](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex) &#124;

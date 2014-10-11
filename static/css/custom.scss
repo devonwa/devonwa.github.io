@@ -15,14 +15,6 @@ a, a:hover {
     color: $color-primary;
 }
 
-#post-list {
-    padding-left: 0px;
-}
-
-#post-list-item {
-    list-style-type: none;
-}
-
 .navbar {
     background-color: $color-background;
     border-bottom: 2px solid;
@@ -38,8 +30,15 @@ a, a:hover {
     margin-bottom: 10px;
 }
 
-@media (max-width: 767) {
-    #home-image {
-        float: center;
-    }
+#home-image-thumbnail {
+    float: right;
+    padding: 0 0 5px 10px;
+}
+
+#post-list {
+    padding-left: 0px;
+}
+
+#post-list-item {
+    list-style-type: none;
 }
