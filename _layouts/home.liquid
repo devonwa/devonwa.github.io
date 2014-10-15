@@ -29,7 +29,8 @@ img-src-thumbnail: /static/image/2014-10-05-me-tall-100x132.png
             </small>
             </h3>
             <p>
-                {{ post.content | strip_html | truncatewords: 60 }}
+                <!-- {{ post.content | strip_html | truncatewords: 60 }} -->
+                {{ post.description }}
             </p>
         </li>
         {% endfor %}

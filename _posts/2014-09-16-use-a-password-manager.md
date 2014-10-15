@@ -2,7 +2,7 @@
 layout: post
 title: Use a password manager
 tags: Efficiency, Technology
-description: Learn why a password manager is a necessary part of the modern web user's toolkit and implement Keepass2 as your new password assistant.
+description: If you only use a handful of passwords on the internet, you're putting your identity at risk. Use a password manager to easily create and maintain passwords tailored to every website you use. Read how to implement Keepass2 as your new password assistant.
 ---
 
 If you're like me, you use around 10 sites every day, and another 20 or so sporadically. There's also that untold number of sites left in the dust after you pillaged their free trial or something. But even though you don't use them, they still have one of your rotated passwords, your username, and probably your email address (which doesn't use the same password _right_?).
