@@ -2,6 +2,7 @@
 layout: post
 title: Use a password manager
 tags: Efficiency, Technology
+type: article
 description: If you only use a handful of passwords on the internet, you're putting your identity at risk. Use a password manager to easily create and maintain passwords tailored to every website you use. Read how to implement Keepass2 as your new password assistant.
 ---
 

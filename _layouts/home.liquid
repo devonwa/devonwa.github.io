@@ -21,18 +21,20 @@ img-src-thumbnail: /static/image/2014-10-05-me-tall-100x132.png
 <div>
     <ul id="post-list">
         {% for post in site.posts %}
-        <li id="post-list-item">
-            <h3>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <small>
-                {{ post.date | date_to_string }}
-            </small>
-            </h3>
-            <p>
-                <!-- {{ post.content | strip_html | truncatewords: 60 }} -->
-                {{ post.description }}
-            </p>
-        </li>
+            {% if post.type == "article" %}
+                <li id="post-list-item">
+                    <h3>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <small>
+                        {{ post.date | date_to_string }}
+                    </small>
+                    </h3>
+                    <p>
+                        <!-- {{ post.content | strip_html | truncatewords: 60 }} -->
+                        {{ post.description }}
+                    </p>
+                </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </div>
