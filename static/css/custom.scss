@@ -2,12 +2,13 @@
 ---
 
 $color-primary: #9b2221;
-$color-background: #fffffb;
+$color-background: #fffffd;
 $color-text: #202020;
 
 body {
     background-color: $color-background;
     color: $color-text;
+    padding-top: 70px;
 }
 
 a, a:hover {

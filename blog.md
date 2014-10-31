@@ -9,7 +9,7 @@ My blog contains lengthy articles to communicate ideas, but it also has short te
 
 <div><hr></div>
 
-## Articles
+## Articles  <a href="{{ site.url }}/feed" title="Articles RSS"><i class="icon-rss-sign"></i></a>
 
 <div>
     <ul id="post-list">

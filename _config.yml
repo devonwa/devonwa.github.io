@@ -1,9 +1,13 @@
+# RSS
+name: devonwa.com
+description: An engineering blog by Devon Walker.
+url: http://devonwa.com
+
 # Site vars
 highlighter: pygments
 lsi: false
 markdown: kramdown
 permalink: pretty
-#paginate: 5
 
 # Custom vars
 version:
