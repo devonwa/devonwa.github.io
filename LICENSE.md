@@ -1,6 +1,8 @@
-# devonwa.github.io
+# License
 
-## The MIT License (MIT)
+## devonwa.github.io
+
+### The MIT License (MIT)
 
 Copyright (c) 2014 Devon Walker <devonwa.com>
 
@@ -12,7 +14,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 
-## Other software
+## Software
 
 The MIT License (MIT)
 
