@@ -1,9 +1,11 @@
 ---
 ---
 
-$color-primary: #9b2221;
+$color-primary: #9b2121;
 $color-background: #fffffd;
 $color-text: #202020;
+$color-text-light: #505050;
+$color-primary-dark: #4A0000;
 
 body {
     background-color: $color-background;
@@ -13,6 +15,36 @@ body {
 
 a, a:hover {
     color: $color-primary;
+}
+
+h2 {
+    color: $color-primary-dark;
+}
+
+h2:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
+h3:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
+.figure {
+    text-align: center;
+    padding: 5px 0 10px 0;
+}
+
+.figure-caption {
+    color: $color-text-light;
+    padding: 5px 0 0 0;
 }
 
 .navbar {

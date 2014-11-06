@@ -6,9 +6,12 @@ type: note
 description: Add a right-click option for opening a terminal to the current directory in Nautilus.
 ---
 
-![open-in-terminal-result.png](/static/post/2014-10-20-linux-open-terminal-from-file-explorer/open-in-terminal-result.png)
-
 *System: Ubuntu 14.04*
+
+<div class="figure">
+    <img src="/static/post/2014-10-20-linux-open-terminal-from-file-explorer/open-in-terminal-result.png" alt="open-in-terminal-result.png">
+    <p class="figure-caption">New right-click menu option</p>
+</div>
 
 Add a right-click menu option to open a terminal to the directory you're looking at in Nautilus (Ubuntu's default file explorer).[^1]
 
