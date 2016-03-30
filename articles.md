@@ -3,9 +3,9 @@ layout: default
 title: Articles
 ---
 
-<p><a href="/feed.xml" title="Articles RSS"><strong><i class="fa fa-rss"></i> RSS Feed</strong></a></p>
+# Articles
 
-## Articles
+<p><a href="/feed.xml" title="Articles RSS"><strong><i class="fa fa-rss"></i> RSS Feed</strong></a></p>
 
 <div>
     <ul id="post-list">
