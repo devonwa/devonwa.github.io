@@ -3,11 +3,6 @@ layout: default
 title: CV
 ---
 
-<style>
-h2 {
-    color: #9b2221;
-}
-</style>
 
 # Devon Walker
 [PDF](/static/page/cv/Devon-Walker-Resume.pdf) &#124;

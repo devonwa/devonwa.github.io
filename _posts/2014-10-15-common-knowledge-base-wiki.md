@@ -1,12 +1,10 @@
 ---
 layout: post
 title: Create a Common Knowledge Base with a Wiki
-tags: Lab, Efficiency
+tags: workflow
 type: article
 description: Using a private wiki among the lab group creates a common knowledge base. It lessens the importance and risk of individual members becoming experts, and allows teammates to quickly create content in a tone and style specific for the group to digest.
 ---
-
-*For the past two years, I've been contracted to work in the engineering R&amp;D lab of a major pharmaceutical. The pressures and outcomes look a lot different than in an academic setting, but how you get there is largely the same battle. This article is part of a series where I share my understanding of the concepts that drive my lab and the tools I've employed along the way.*
 
 ## Knowledge presents an issue
 

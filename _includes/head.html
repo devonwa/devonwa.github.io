@@ -3,10 +3,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devon Walker: {{ page.title }}</title>
+
     <!-- CSS -->
-    {% include css.html %}
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/{{ site.version.bootstrap_css }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/{{ site.version.fontawesome }}/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/static/css/bootstrap-custom.css" rel="stylesheet">
+    <link href="/static/css/custom.css" rel="stylesheet">
+
     <!-- Icon -->
     <link rel="shortcut icon" href="/static/image/favicon.ico">
+
     <!-- RSS -->
     <!-- http://www.rssboard.org/rss-autodiscovery -->
     <link rel="alternate" type="application/rss+xml" title="Articles" href="{{ site.url }}/feed.xml">

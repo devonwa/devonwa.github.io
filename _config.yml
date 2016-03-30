@@ -3,6 +3,25 @@ name: devonwa.com
 description: An engineering blog by Devon Walker.
 url: http://devonwa.com
 
+# Navigation
+nav-links:
+  - text: CV
+    href: /cv/
+  - text: Articles
+    href: /articles/
+
+# Social media
+social:
+  - name: GitHub
+    href: https://github.com/devonwa
+    icon: <i class="fa fa-github fa-2x"></i>
+  - name: Twitter
+    href: https://twitter.com/devwalk
+    icon: <i class="fa fa-twitter fa-2x"></i>
+  - name: LinkedIn
+    href: https://www.linkedin.com/in/devonwalker
+    icon: <i class="fa fa-linkedin fa-2x"></i>
+
 # Site vars
 highlighter: pygments
 lsi: false
@@ -11,6 +30,6 @@ permalink: pretty
 
 # Custom vars
 version:
-  bootstrap_css: 3.2.0
-  bootstrap_js: 3.2.0
-  fontawesome: 4.2.0
+  bootstrap_css: 3.3.6
+  bootstrap_js: 3.3.6
+  fontawesome: 4.5.0

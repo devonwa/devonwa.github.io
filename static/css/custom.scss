@@ -2,7 +2,7 @@
 ---
 
 $color-primary: #9b2121;
-$color-background: #fffffd;
+$color-background: #ffffff;
 $color-text: #202020;
 $color-text-light: #505050;
 $color-primary-dark: #4A0000;
@@ -10,15 +10,11 @@ $color-primary-dark: #4A0000;
 body {
     background-color: $color-background;
     color: $color-text;
-    padding-top: 70px;
+    /*padding-top: 70px; /* for navbar-fixed-top */
 }
 
-a, a:hover {
+a, a:hover, a:focus, a:active {
     color: $color-primary;
-}
-
-h2 {
-    color: $color-primary-dark;
 }
 
 h2:before { 
@@ -35,16 +31,6 @@ h3:before {
   margin-top: -75px; 
   height: 75px; 
   visibility: hidden; 
-}
-
-.figure {
-    text-align: center;
-    padding: 5px 0 10px 0;
-}
-
-.figure-caption {
-    color: $color-text-light;
-    padding: 5px 0 0 0;
 }
 
 .navbar {
