@@ -35,7 +35,10 @@ h3:before {
 
 .navbar {
     background-color: $color-background;
+    border-top: 0;
+    border-right: 0;
     border-bottom: 2px solid;
+    border-left: 0;
     border-color: $color-primary;
 }
 
