@@ -18,9 +18,6 @@ social:
   - name: Twitter
     href: https://twitter.com/devwalk
     icon: <i class="fa fa-twitter fa-2x"></i>
-  - name: LinkedIn
-    href: https://www.linkedin.com/in/devonwalker
-    icon: <i class="fa fa-linkedin fa-2x"></i>
 
 # Site vars
 highlighter: rouge

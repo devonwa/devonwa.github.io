@@ -5,10 +5,14 @@ title: CV
 
 
 # Devon Walker
-[PDF](/static/page/cv/Devon-Walker-Resume.pdf) &#124;
-[source](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex) &#124;
-<a href="mailto:{% include email.html %}">{% include email.html %}</a>&#124;
-(717) 304--2186 <br>
+[PDF](/static/page/cv/Devon-Walker-Resume.pdf)
+&#124;
+[source](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex)
+&#124;
+<a href="mailto:{% include email.html %}">{% include email.html %}</a>
+&#124;
+<a href="https://www.linkedin.com/in/devonwalker">LinkedIn</a>
+<br>
 
 ## Experience
 
