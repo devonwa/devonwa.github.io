@@ -1,7 +1,8 @@
 # RSS
 name: devonwa.com
-description: An engineering blog by Devon Walker.
-url: http://devonwa.com
+description: >
+  The personal website of Devon Walker.
+url: "http://devonwa.com"
 
 # Navigation
 nav-links:
@@ -20,10 +21,11 @@ social:
     icon: <i class="fa fa-twitter fa-2x"></i>
 
 # Site vars
+markdown: kramdown
 highlighter: rouge
 lsi: false
-markdown: kramdown
 permalink: pretty
+future: true
 
 # Custom vars
 version:
