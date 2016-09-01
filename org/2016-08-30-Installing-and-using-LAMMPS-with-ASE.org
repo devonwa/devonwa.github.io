@@ -1,0 +1,294 @@
+#+title: The condensed installation guide for working with LAMMPS in ASE
+
+In my research group, we rely heavily on using [[https://wiki.fysik.dtu.dk/ase/index.html][ASE]] to define, visualize, and work with our atomic structures in Python. We perform calculations with the quantum mechanics simulation package [[http://www.vasp.at/][VASP]] through an [[https://github.com/jkitchin/vasp][ASE calculator that my advisor created]], which nicely wraps everything we need from VASP into something we can use in Python. So we don't have to worry about constructing or parsing all of the Fortran input/output files from VASP.
+
+But VASP, while exceptional for density functional theory (DFT), isn't as commonly used for molecular dynamics (MD) simulations. That's where [[http://lammps.sandia.gov/][LAMMPS]] shines, but it can be a bit of a bear to compile and get setup with ASE if you are not experienced with compiling and linking packages.
+
+So this post is a condensed form of what you can find in the [[http://lammps.sandia.gov/doc/Manual.html][LAMMPS]] and [[https://wiki.fysik.dtu.dk/ase/index.html][ASE]] documentation, for people looking to get setup as quickly as possible. /You can [[*A condensed form of the condensed guide (tl;dr)][skip to the end]] for a script that will run all the steps of this guide if your environment is setup correctly (good luck :)./
+
+** Dependencies
+
+Before we begin, I will assume that you have the following packages installed on your machine:
+- [[https://www.open-mpi.org/][MPI]]
+- [[https://www.python.org/download/releases/2.7.2/][Python 2]]
+- [[https://pypi.python.org/pypi/mpi4py][mpi4py]]
+- [[https://wiki.fysik.dtu.dk/ase/index.html][ASE]]
+
+The guide was written for Linux (I've used it with Arch, Ubuntu, and CentOS) and should be similar for Mac. Unfortunately for Windows users, you will have to read the official documentation to build LAMMPS, but [[http://rpm.lammps.org/windows.html][it is possible]]. 
+
+** Making LAMMPS
+
+First we need to [[http://lammps.sandia.gov/download.html][download LAMMPS]]. This can be done in many ways, but perhaps the simplest is with git.
+
+#+BEGIN_SRC sh
+git clone git://git.lammps.org/lammps-ro.git
+#+END_SRC
+
+The git repository may be on an unstable release when you download it. Stable versions of LAMMPS are listed on [[http://lammps.sandia.gov/bug.html][this page]] with a corresponding git tag that you can checkout. For example, I'm currently using the stable release from July 2016 with the git tag =r15407=.
+
+#+BEGIN_SRC sh
+git checkout tags/r15407
+#+END_SRC
+
+Wherever you've downloaded LAMMPS, let's set an environment to denote it's path in the system. We will use this variable several times in the following scripts.
+
+#+BEGIN_SRC sh
+export LAMMPSPATH="$HOME/lib/lammps-ro"
+#+END_SRC
+
+Now, change into the =src= directory where we will start to build the LAMMPS package.
+
+#+BEGIN_SRC sh
+cd $LAMMPSPATH/src
+#+END_SRC
+
+*** Python and optional packages
+
+LAMMPS requires that you specify what [[http://lammps.sandia.gov/doc/Section_packages.html][optional packages]] you would like to use before you build. They often contain potentials or advanced functionality beyond the base package. One such package that we definitely want is Python. The following command tells the Makefile to include the Python package when it comes time to make LAMMPS. It does not actually build the package yet.
+
+#+BEGIN_SRC sh
+make yes-python
+#+END_SRC
+
+My current research uses the AIREBO potential which is contained in the MANYBODY package. The MANYBODY package contains several other useful potentials, such as EAM and Tersoff. I've found that test scripts like to use these potentials and suggest that you include this package.
+
+#+BEGIN_SRC sh
+make yes-manybody
+#+END_SRC
+
+If you decide you no longer want an optional package, simply change ~make yes-manybody~ to ~make no-manybody~. If you decide you want another package after LAMMPS is built, simply run the ~make yes-package~ command. Then build LAMMPS again. Nothing special required.
+
+**** ReaxFF
+
+The Reax optional package requires an additional dependency that you likely already have: a Fortran compiler, like =gfortran=. You must specify this compiler using a Makefile in the =lib/reax= directory of LAMMPS before adding it to the LAMMPS build.
+
+#+BEGIN_SRC sh
+cd $LAMMPSPATH/lib/reax
+make -f Makefile.gfortran
+cd $LAMMPSPATH/src
+make yes-reax
+#+END_SRC
+
+*** LAMMPS as a shared library
+
+We will be building LAMMPS twice. The first time to generate a binary for the traditional means of running LAMMPS and the second time to build the shared library that Python can communicate with.
+
+#+BEGIN_SRC sh
+make mpi
+make mpi mode=shlib
+#+END_SRC
+
+This should create a binary called =lmp_mpi=, which you can run in the shell with ~./lmp_mpi~. You can exit LAMMPS in the shell with =Ctrl+d=. Now is a good time to add a link to =lmp_mpi= somewhere in your =$PATH=, so you can call it anywhere.
+
+Python will also need to know where you've built LAMMPS. To do this, update your =$PYTHONPATH= to include the =python= directory in LAMMPS. We also need to include the =src= directory in =$LD_LIBRARY_PATH= to run LAMMPS as shared library.
+
+#+BEGIN_SRC sh
+export PYTHONPATH="$LAMMPSPATH/python:$PYTHONPATH"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$LAMMPSPATH/src"
+#+END_SRC
+
+** Connecting to ASE with LAMMPSrun
+
+[[https://wiki.fysik.dtu.dk/ase/ase/calculators/lammpsrun.html][LAMMPSrun]] is a [[https://wiki.fysik.dtu.dk/ase/ase/calculators/lammps.html?highlight=lammps][calculator]] provided by ASE and is currently in early development. I also host a fork of the calculator [[https://github.com/devonwa/LAMMPSrun][on Github]]. LAMMPSrun requires an evironment variable called =$LAMMPS_COMMAND=, which tells the calculator how to call LAMMPS.
+
+#+BEGIN_SRC sh
+export LAMMPS_COMMAND="/usr/bin/mpirun -np 4 lmp_mpi"
+#+END_SRC
+
+This will call =mpirun= to run the =lmp_mpi= binary over 4 processes (=-np= = number of processes). Note that =mpirun= must be specified with an absolute path for LAMMPSrun to read it properly.
+
+** Testing it out
+
+So that's it. Think everything built correctly? Here are some tests to check your progress.
+
+*** LAMMPS basic test
+
+The following command will run a simple Lennard-Jones (LJ) calculation.
+
+#+BEGIN_SRC sh :results drawer
+lmp_mpi -in $LAMMPSPATH/bench/in.lj
+#+END_SRC
+
+Yields (truncated):
+#+BEGIN_EXAMPLE
+LAMMPS (30 Jul 2016)
+...
+Performance: 26229.986 tau/day, 60.718 timesteps/s
+100.0% CPU use with 1 MPI tasks x no OpenMP threads
+...
+Total # of neighbors = 1202833
+...
+Total wall time: 0:00:01
+#+END_EXAMPLE
+
+*** MPI test
+
+We can run the same simulation over 4 processes with MPI.
+
+#+BEGIN_SRC sh :results drawer
+mpirun -np 4 lmp_mpi -in $LAMMPSPATH/bench/in.lj
+#+END_SRC
+
+Yields (truncated): 
+#+BEGIN_EXAMPLE
+LAMMPS (30 Jul 2016)
+...
+Performance: 65476.470 tau/day, 151.566 timesteps/s
+99.5% CPU use with 4 MPI tasks x no OpenMP threads
+...
+Total # of neighbors = 1202833
+...
+Total wall time: 0:00:00
+#+END_EXAMPLE
+
+*** LAMMPS with Python test
+
+The following should load LAMMPS and then exit immediately after, when the python script completes.
+
+#+BEGIN_SRC python
+from lammps import lammps
+lmp = lammps()
+#+END_SRC
+
+Yields:
+#+BEGIN_EXAMPLE
+LAMMPS (30 Jul 2016)
+Total wall time: 0:00:00
+#+END_EXAMPLE
+
+*** mpi4py with LAMMPS
+
+This will run the previous LJ simulation with MPI and one process, but from Python.
+
+This script is from the [[http://lammps.sandia.gov/doc/Section_python.html][LAMMPS Python interface docs]].
+
+#+BEGIN_SRC python :results output org drawer
+from lammps import lammps
+from mpi4py import MPI
+import os
+
+lmp = lammps()
+lmp_path = os.environ['LAMMPSPATH']
+lmp.file(os.path.join(lmp_path, "bench/in.lj"))
+me = MPI.COMM_WORLD.Get_rank()
+nprocs = MPI.COMM_WORLD.Get_size()
+
+print "Proc %d out of %d procs has" % (me,nprocs),lmp
+MPI.Finalize()
+#+END_SRC
+
+Yields (truncated):
+#+BEGIN_EXAMPLE
+LAMMPS (30 Jul 2016)
+...
+Performance: 26944.125 tau/day, 62.371 timesteps/s
+100.0% CPU use with 1 MPI tasks x no OpenMP threads
+...
+Total # of neighbors = 1202833
+...
+Total wall time: 0:00:01
+#+END_EXAMPLE
+
+*** LAMMPSrun calculator test
+
+This is your first calculation with LAMMPS and ASE! It's all coming together! Let's get the stress on a molecule of table salt.
+
+This script is from the [[https://wiki.fysik.dtu.dk/ase/ase/calculators/lammpsrun.html][LAMMPSrun docs]].
+
+#+BEGIN_SRC python :results output org drawer
+from ase import Atoms, Atom
+from ase.calculators.lammpsrun import LAMMPS
+
+a = [6.5, 6.5, 7.7]
+d = 2.3608
+NaCl = Atoms([Atom('Na', [0, 0, 0]),
+              Atom('Cl', [0, 0, d])],
+             cell=a, pbc=True)
+
+calc = LAMMPS(tmp_dir="/home/devonwa/tmp/lammpstmp")
+NaCl.set_calculator(calc)
+
+print(NaCl.get_stress())
+#+END_SRC
+
+Yeilds:
+#+BEGIN_EXAMPLE
+[-0.  -0.  0.0004212  -0.  -0.  -0.]
+#+END_EXAMPLE
+
+** An advanced calculation
+
+Here is a calculation for a pristine graphene sheet that uses the AIREBO potential. It calls a few instructions using a pseudo-LAMMPS syntax, which LAMMPSrun parses and writes to a LAMMPS input file. 
+
+#+BEGIN_SRC python :results output org drawer
+from ase import Atoms, Atom
+from ase.calculators.lammpsrun import LAMMPS
+from ase.visualize import view
+import numpy as np
+import os
+
+# LAMMPS context information
+lmp_path = os.getenv("LAMMPSPATH")
+potential = os.path.join(lmp_path, "potentials/CH.airebo")
+files = [potential]
+parameters = {"mass": ["* 1.0"],
+              "pair_style": "airebo 6.5 1 1",
+              "pair_coeff": ['* * ' + potential + ' C']}
+calc = LAMMPS(parameters=parameters, files=files)
+
+# Graphene structure
+a = 2.46
+a1 = a * np.array([3.0**0.5/2., -1./2., 0.])
+a2 = a * np.array([3.0**0.5/2., 1./2., 0.])
+a3 = np.array([0., 0., 18.])
+atoms = Atoms([Atom('C', 1./2. * a3),
+               Atom('C', 1./3. * a1 + 1./3. * a2 + 1./2. * a3)],
+               cell=[a1, a2, a3], pbc=True)
+
+# Calculate the energy
+atoms.set_calculator(calc)
+energy = atoms.get_potential_energy()
+
+print("Energy: {:0.3f} eV".format(energy))
+#+END_SRC 
+
+Yields:
+#+BEGIN_EXAMPLE
+Energy: -14.816 eV
+#+END_EXAMPLE
+
+** Closing
+
+I am not the most experienced developer when it comes to building packages, so please let me know of any improvements that would make the guide simpler or more clear. Also, a thank you to Kevin Parrish in the McGaughey group for helping me build LAMMPS with Reax on Gilgamesh for the first time.
+
+*** A condensed form of the condensed guide (tl;dr)
+
+Environment variables required in your shell:
+#+BEGIN_SRC sh
+#!/usr/bin/bash
+
+# ASE LAMMPSRun
+export LAMMPS_COMMAND="/usr/bin/mpirun -np 4 lmp_mpi"
+
+# LAMMPS
+export LAMMPSPATH="$HOME/lib/lammps-ro"
+export PYTHONPATH="$LAMMPSPATH/python:$PYTHONPATH"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$LAMMPSPATH/src"
+#+END_SRC
+
+Installation script:
+#+BEGIN_SRC sh
+#!/usr/bin/bash
+git clone git://git.lammps.org/lammps-ro.git $LAMMPSPATH
+cd $LAMMPSPATH/src
+make yes-python
+make yes-manybody
+make mpi
+make mpi mode=shlib
+#+END_SRC
+
+*** Notes for users on Gilgamesh at Carnegie Mellon
+
+- Since the standard =mpirun= is a bit out of date, I define =$LAMMPS_COMMAND= using a different binary: ~export LAMMPS_COMMAND="/usr/mpi/gcc/openmpi-1.4/bin/mpirun -np 4 lmp_mpi"~.
+- If you are installing Reax, you will need to use an Intel compiler.
+- For running jobs in the queue, I needed to define one more evironment variable: ~export OMPI_MCA_mtl=^psm~. I believe this affects the messaging protocol of MPI.
