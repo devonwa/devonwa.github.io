@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Code batching with Jinja2 templates
-tags: workflow, python
+tags: workflow, Python
 type: article
 description: We can use Jinja2 templates to submit calculations to a job queue on a remote cluster. They improve code reuse and keep big ugly strings out of your scripts.
 ---
