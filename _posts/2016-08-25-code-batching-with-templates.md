@@ -6,6 +6,7 @@ type: article
 description: We can use Jinja2 templates to submit calculations to a job queue on a remote cluster. They improve code reuse and keep big ugly strings out of your scripts.
 ---
 
+{% raw %}
 Calculations involving DFT or training a neural network can take upwards of a week to complete. In the Kitchin Group, we submit these jobs to a PBS queue on a remote server cluster for processing. Often the scripts we submit vary only by a few parameters and are otherwise the same. Consider the following example of calculating energies for the equation of state of fcc gold.
 
 ``` python
@@ -180,3 +181,4 @@ for framework in frameworks:
 This script iterates over 10 hidden layer frameworks and renders a template for each of them. It saves the rendered template to a python file and then submits that file to the queue with the `td.qsub` function from the twodee module. [Twodee](https://github.com/devonwa/twodee) contains macros that I find useful in my research and is freely available on Github.
 
 This post is meant to be an introduction to using templates for a single purpose but there is a lot more to Jinja2 templates than what I am showing here. They can include logic, like if statements and for loops, which you can use to create some really powerful generic templates. But that's for another day!
+{% endraw %}
