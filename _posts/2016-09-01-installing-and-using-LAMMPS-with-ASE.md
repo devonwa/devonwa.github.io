@@ -100,7 +100,7 @@ My current research uses the AIREBO potential which is contained in the MANYBODY
 make yes-manybody
 ```
 
-If you decide you no longer want an optional package, simply change `make yes-manybody` to `make no-manybody`. If you decide you want another package after LAMMPS is built, simply run the `make yes-package` command. Then build LAMMPS again. Nothing special required.
+If you decide you no longer want an optional package, simply change `make yes-manybody` to `make no-manybody`. If you decide you want another package after LAMMPS is built, simply run the `make yes-package` command and then build LAMMPS again. Nothing special required.
 
 #### <a id="ReaxFF"></a>ReaxFF
 
