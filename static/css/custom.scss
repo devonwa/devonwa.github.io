@@ -46,13 +46,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 25px;
 }
 
-.page-content h3 {
+.page-content h3, h4, h5, h6 {
     font-size: 20px;
     
 }
 
 .page-content h4, h5, h6 {
-    font-size: 15px;
     font-style: italic;
     font-weight: normal;
 }
