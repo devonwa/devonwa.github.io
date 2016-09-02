@@ -269,14 +269,14 @@ Yeilds:
 
 Here is a calculation for a pristine graphene sheet that uses the AIREBO potential. It calls a few instructions using a pseudo-LAMMPS syntax, which LAMMPSrun parses and writes to a LAMMPS input file. 
 
-``` python
+```python
 from ase import Atoms, Atom
 from ase.calculators.lammpsrun import LAMMPS
 from ase.visualize import view
 import numpy as np
 import os
 
-## LAMMPS context information
+# LAMMPS context information
 lmp_path = os.getenv("LAMMPSPATH")
 potential = os.path.join(lmp_path, "potentials/CH.airebo")
 files = [potential]
@@ -285,7 +285,7 @@ parameters = {"mass": ["* 1.0"],
                 "pair_coeff": ['* * ' + potential + ' C']}
 calc = LAMMPS(parameters=parameters, files=files)
 
-## Graphene structure
+# Graphene structure
 a = 2.46
 a1 = a * np.array([3.0**0.5/2., -1./2., 0.])
 a2 = a * np.array([3.0**0.5/2., 1./2., 0.])
@@ -294,7 +294,7 @@ atoms = Atoms([Atom('C', 1./2. * a3),
                 Atom('C', 1./3. * a1 + 1./3. * a2 + 1./2. * a3)],
                 cell=[a1, a2, a3], pbc=True)
 
-## Calculate the energy
+# Calculate the energy
 atoms.set_calculator(calc)
 energy = atoms.get_potential_energy()
 
