@@ -2,6 +2,7 @@
 ---
 
 $color-primary: #9b2121;
+$color-visited: #96713C;
 $color-background: #ffffff;
 $color-text: #202020;
 $color-text-light: #505050;
@@ -17,20 +18,43 @@ a, a:hover, a:focus, a:active {
     color: $color-primary;
 }
 
-h2:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -75px; 
-  height: 75px; 
-  visibility: hidden; 
+a:visited {
+    color: $color-visited;
 }
 
-h3:before { 
+/*h2:before, h3:before { 
   display: block; 
   content: " "; 
   margin-top: -75px; 
   height: 75px; 
   visibility: hidden; 
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+}
+
+.page-content h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.page-content h1 {
+    font-size: 30px;
+}
+
+.page-content h2 {
+    font-size: 25px;
+}
+
+.page-content h3 {
+    font-size: 20px;
+    
+}
+
+.page-content h4, h5, h6 {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: normal;
 }
 
 .navbar {
@@ -69,6 +93,11 @@ hr {
     border-color: $color-primary;
 }
 
+/*
+code {
+    color: #000;
+}
+*/
 
 /**
  * Syntax highlighting styles
