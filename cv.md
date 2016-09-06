@@ -3,62 +3,82 @@ layout: default
 title: CV
 ---
 
+{::options parse_block_html="true" /}
+<div class="cv">
 
+<div class="text-center">
 # Devon Walker
 [PDF](/static/page/cv/Devon-Walker-Resume.pdf)
 &#124;
-[source](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex)
+[source](https://github.com/devonwa/cv)
 &#124;
 <a href="mailto:{% include email.html %}">{% include email.html %}</a>
 &#124;
 <a href="https://www.linkedin.com/in/devonwalker">LinkedIn</a>
-<br>
-
-## Experience
-
-**<big>EZSoft, Inc.</big>** - Malvern, PA\\
-_Process Automation Engineer_ - October 2012 to Present
-
-* Providing on-site support for the research and development group within a major pharmaceutical company since January 2013.
-  * Managing projects for integrating new technologies into a prototype process.
-  * Recording experiment data into a database and using statistical analysis to develop further experiments and provide presentations to superiors.
-* Developed an HMI application for a bakery with over twelve hundred I/O points spanning three synchronous control system PLCs.
-
-**<big>Classic Industries</big>** - Latrobe, PA\\
-_Quality Engineer Contractor_ - August 2012 to September 2012
-
-* Documented mold qualifications for a merger of two production plants.
-
-**<big>US Liner Company</big>** - Cranberry, PA\\
-_Research Engineer Internship_ -January 2012 to May 2012
-
-* Tested products against ASTM standards with an Instron machine.
-* Prepared result reports for management and sales with Microsoft Office Suite.
-
-**<big>Chemical Engineering Department, University of Pittsburgh</big>** - Pittsburgh, PA\\
-_Chemical Engineer Internship_ - May 2011 to December 2011
-
-* Developed the LabView control systems for seven laboratory experiments used by all students taking the senior chemical engineering lab.
-* Designed a double-pipe heat exchanger experiment.  Modeled the system using first principles in Simulink and wrote the lab manual for student use.
-
-**<big>The Cartilage Restoration Center, UPMC</big>**  - Pittsburgh, PA\\
-_Website Developer_ - August 2010 to April 2011
+<br />
+</div>
 
 ## Education
 
-**<big>University of Pittsburgh</big>** -- April 2012
+**Carnegie Mellon University** <span class="pull-right">Expected December 2016</span><br />
+M.S., Chemical Engineering (4.0/4.0)<br />
 
-* Bachelor of Science in Chemical Engineering. GPA 3.3/4.0
+<br />
+**University of Pittsburgh** <span class="pull-right">April 2012</span><br />
+B.S., Chemical Engineering (3.3/4.0)<br />
+
 * Minor in Computer Science
+<br />
 
-**<big>Fundamentals of Engineering Exam (EIT)</big>** - April 2012
+## Research
+
+**Carnegie Mellon University, Prof. John Kitchin** <span class="pull-right">Pittsburgh, PA</span><br />
+Graduate researcher <span class="pull-right">January 2015 -- Present</span><br />
+
+* Developing an empirical potential for graphene with a neural network.
+<br />
+
+## Industry
+
+**EZSoft, Inc** <span class="pull-right">Malvern, PA</span><br />
+Automation Engineer <span class="pull-right">October 2012 -- July 2015</span><br />
+
+* Provided on-site support for the research and development group within a major pharmaceutical company starting in January 2013.
+
+  * Managed projects for integrating new technologies into a prototype process.
+  * Recorded experiment data into a database and using statistical analysis to develop further experiments and provide presentations to superiors.
+
+* Developed an HMI application for a bakery with over twelve hundred I/O points spanning three synchronous control system PLCs.
+
+<br />
+**Classic Industries** <span class="pull-right">Latrobe, PA</span><br />
+Quality Engineer <span class="pull-right">August 2012 -- September 2012</span><br />
+
+<br />
+**US Liner Company** <span class="pull-right">Cranberry, PA</span><br />
+Research Engineer Internship <span class="pull-right">January 2012 -- May 2012</span><br />
+
+<br />
+**Chemical Engr. Dept., University of Pittsburgh** <span class="pull-right">Pittsburgh, PA</span><br />
+Process Control Engineer Internship <span class="pull-right">May 2011 -- December 2011</span><br />
+
+
+## Certificates
+
+**Fundamentals of Engineering Exam (EIT)** <span class="pull-right">April 2012</span>
 
 ## Skills
 
-* **<big>Technology</big>** - Proficient in Aspen Engineering Suite, Process Modeling, Process Optimization, Microsoft Office, Cross-disciplinary Design, Linux, Virtual Machines, Ethernet Networking. Familiar with AutoCAD, SolidWorks.
-* **<big>Programming Languages</big>** - Proficient in Matlab, Simulink, SQL, C#, LabView, Excel VBA, Python, Java, PLC Ladder Logic, Latex.
+**Applications** -- Proficient in Aspen Plus, Microsoft Office, Cross-disciplinary Design, Linux, Virtual Machines, Ethernet Networking. Familiar with AutoCAD, SolidWorks.
+<br />
+<br />
+**Programming languages** -- Python, Matlab, Simulink, LabView, SQL, C\#, VBA, Java, PLC Ladder Logic, Latex.
+<br />
 
 ## Affiliations
 
-* **<big>American Institute of Chemical Engineers</big>** - 2010 to Present
-* **<big>Order of the Engineer</big>** - 2012 to Present
+**American Institute of Chemical Engineers** <span class="pull-right">Member, 2010 -- Present</span>
+<br />
+**Order of the Engineer** <span class="pull-right">Member, 2012 -- Present</span>
+<br />
+</div>
