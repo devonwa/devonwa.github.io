@@ -58,14 +58,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .cv-pic {
     height: 90px;
-    float: left;
+    float: right;
 }
-@media screen and (min-width: 768px) {
-    .cv-pic {
-        height: 90px;
-        float: right;
-    }
-}
+//@media screen and (min-width: 768px) {
+//    .cv-pic {
+//        height: 90px;
+//        float: right;
+//    }
+//}
     
 
 .cv p, ul {

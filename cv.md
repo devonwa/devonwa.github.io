@@ -7,7 +7,7 @@ title: CV
 <div class="cv">
 
 <div class="row">
-<div class="col-sm-8">
+<div class="col-xs-8">
 <div class="text-left">
 # Devon Walker
 [PDF](/static/page/cv/Devon-Walker-Resume.pdf)
@@ -19,7 +19,7 @@ title: CV
 <br />
 </div>
 </div>
-<div class="col-sm-4">
+<div class="col-xs-4">
 <img class="img-responsive img-circle cv-pic" src="../static/image/2014-10-05-me-head-100x100.jpg" />
 </div>
 </div>
