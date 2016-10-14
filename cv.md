@@ -20,7 +20,7 @@ title: CV
 </div>
 </div>
 <div class="col-sm-4">
-<img style="float: right; height:90px;" class="img-responsive img-circle" src="../static/image/2014-10-05-me-head-100x100.jpg" />
+<img class="img-responsive img-circle cv-pic" src="../static/image/2014-10-05-me-head-100x100.jpg" />
 </div>
 </div>
 
