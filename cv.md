@@ -6,7 +6,9 @@ title: CV
 {::options parse_block_html="true" /}
 <div class="cv">
 
-<div class="text-center">
+<div class="row">
+<div class="col-sm-8">
+<div class="text-left">
 # Devon Walker
 [PDF](/static/page/cv/Devon-Walker-Resume.pdf)
 &#124;
@@ -15,6 +17,14 @@ title: CV
 <a href="mailto:{% include email.html %}">{% include email.html %}</a>
 <br />
 <br />
+</div>
+</div>
+<div class="col-sm-4">
+<img style="float: right; height:90px;" class="img-responsive img-circle" src="../static/image/2014-10-05-me-head-100x100.jpg" />
+</div>
+</div>
+
+<div class="text-center">
 **I am currently seeking internship opportunities between January and August 2017, before entering a Ph.D. program in the fall.**
 </div>
 
