@@ -6,7 +6,7 @@ type: article
 description: A poster created for the 2016 CMU Teaching and Learning Summit about teaching with org-mode.
 ---
 
-Poster: PDF, pptx 
+Poster: [pdf](/static/post/2016-10-14-poster-tl-summit/Poster-devonwa-TeachingLearning-2016.pdf), [pptx](/static/post/2016-10-14-poster-tl-summit/Poster-devonwa-TeachingLearning-2016.pptx)
 
 # Abstract<a id="orgheadline1"></a>
 
@@ -14,7 +14,7 @@ Learning engineering concepts without hands-on examples can be a difficult task 
 
 # Resources<a id="orgheadline2"></a>
 
--   Source code of example: org file, pdf, slideshow
+-   Source code of lesson plan: [org file](/static/post/2016-10-14-poster-tl-summit/org-example.org), [pdf](/static/post/2016-10-14-poster-tl-summit/org-example.pdf), [slideshow](/static/post/2016-10-14-poster-tl-summit/org-example-presentation.html) ([org file](/static/post/2016-10-14-poster-tl-summit/org-example-presentation.org))
 -   Get [emacs](https://www.gnu.org/software/emacs/) and [org-mode](http://orgmode.org/)!
 -   A quick-start Python alternative: [Anaconda](https://www.continuum.io/downloads)
 -   An org-based teaching platform by my advisor, Prof. John Kitchin: [Techela](https://github.com/jkitchin/techela)
