@@ -14,7 +14,7 @@ Learning engineering concepts without hands-on examples can be a difficult task 
 
 # Resources<a id="orgheadline2"></a>
 
--   Source code of lesson plan: [org file](/static/post/2016-10-14-poster-tl-summit/org-example.org), [pdf](/static/post/2016-10-14-poster-tl-summit/org-example.pdf), [slideshow](/static/post/2016-10-14-poster-tl-summit/org-example-presentation.html) ([org file](/static/post/2016-10-14-poster-tl-summit/org-example-presentation.org))
+-   Source code of lesson plan: [org file](/static/post/2016-10-14-poster-tl-summit/org-example.org), [pdf](/static/post/2016-10-14-poster-tl-summit/org-example.pdf), [slideshow](/static/post/2016-10-14-poster-tl-summit/org-example-presentation.html) ([org](/static/post/2016-10-14-poster-tl-summit/org-example-presentation.org))
 -   Get [emacs](https://www.gnu.org/software/emacs/) and [org-mode](http://orgmode.org/)!
 -   A quick-start Python alternative: [Anaconda](https://www.continuum.io/downloads)
 -   An org-based teaching platform by my advisor, Prof. John Kitchin: [Techela](https://github.com/jkitchin/techela)
