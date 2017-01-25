@@ -24,10 +24,6 @@ title: CV
 </div>
 </div>
 
-<div class="text-center">
-**I am currently seeking internship opportunities between January and August 2017, before entering a Ph.D. program in the fall.**
-</div>
-
 ## Education
 <hr>
 
