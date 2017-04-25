@@ -57,7 +57,7 @@ Process Control Engineer Internship <span class="pull-right">May 2011 -- Decembe
 Master's Thesis, Advisor: Prof. John Kitchin <span class="pull-right">January 2015 -- December 2016</span><br />
 Title: A neural network potential for nanoporous graphene.
 
-* Performed \textit{ab initio} molecular simulations on a stochastic sampling of nanopores in graphene in order to train a neural network potential suitable for dynamic simulations.
+* Performed ab initio molecular simulations on a stochastic sampling of nanopores in graphene in order to train a neural network potential suitable for dynamic simulations.
 * Code for simulations and neural network training were written in Python and executed in parallel on a Linux-based distributed computing cluster.
 <br />
 
@@ -88,7 +88,7 @@ Bachelor of Science in Chemical Engineering<br />
 **Software:** RSLogix, FactoryTalk View, Virtual Machines, SQL Server, Microsoft Office, SciPy, Git, Google Apps, COMSOL, ASPEN Plus.
 <br />
 <br />
-**Programming languages:** Proficient in C\#, PLC Ladder Logic, Python, Java, MATLAB, LabView, HTML, CSS, LaTeX. Familiar with C{}\verb!++!, SQL, Go, VBA.
+**Programming languages:** Proficient in C#, PLC Ladder Logic, Python, Java, MATLAB, LabView, HTML, CSS, LaTeX. Familiar with C++, SQL, Go, VBA.
 <br />
 
 ## Affiliations
