@@ -65,11 +65,11 @@ Title: A neural network potential for nanoporous graphene.
 <hr>
 
 **Carnegie Mellon University** <span class="pull-right">December 2016</span><br />
-Master of Science in Chemical Engineering (GPA: 4.0/4.0)<br />
+Master of Science in Chemical Engineering<br />
 
 <br />
 **University of Pittsburgh** <span class="pull-right">April 2012</span><br />
-Bachelor of Science in Chemical Engineering (GPA: 3.3/4.0)<br />
+Bachelor of Science in Chemical Engineering<br />
 
 * Minor in Computer Science
 <br />
