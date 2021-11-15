@@ -9,7 +9,7 @@ title: CV
 <div class="col-xs-8">
 <div class="text-left">
 # Devon Walker
-[PDF](/static/page/cv/Devon-Walker-Resume.pdf)
+[PDF](/static/page/cv/Devon_Walker-Resume.pdf)
 &#124;
 [source](https://github.com/devonwa/cv)
 &#124;
