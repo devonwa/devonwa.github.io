@@ -5,7 +5,6 @@ title: CV
 
 {::options parse_block_html="true" /}
 <div class="cv">
-
 <div class="row">
 <div class="col-xs-8">
 <div class="text-left">
@@ -14,6 +13,7 @@ title: CV
 &#124;
 [source](https://github.com/devonwa/cv)
 &#124;
+
 <a href="mailto:{% include email.html %}">{% include email.html %}</a>
 <br />
 <br />
@@ -24,54 +24,72 @@ title: CV
 </div>
 </div>
 
-## Experience
+## Industry
 <hr>
 
-**Tesla, Inc.** <span class="pull-right">Sparks, NV</span><br />
-Controls Engineer <span class="pull-right">May 2017 -- Present</span><br />
+**Tesla, Inc.** <span class="pull-right">Austin, TX, USA</span><br />
+Staff Automation Controls Engineer <span class="pull-right">December 2019 -- Present</span><br />
+Senior Automation Controls Engineer <span class="pull-right">April 2018 -- December 2019</span><br />
+Automation Controls Engineer <span class="pull-right">May 2017 -- April 2018</span><br />
+
+* Created custom Tool Positioning System that uses a collection of disparate sensors to govern tool interlock conditions. Integrated into Shanghai Drive Unit (approx. 25 stations).
+
+* Redesigned Siemens PLC MES transaction library to abstract changing backend data acquisition strategies from machine process implementations.
+
+* Led a team of 9 controls engineers to deliver the first Tesla Paint Shop in Shanghai.
 
 <br />
-**EZSoft, Inc.** <span class="pull-right">Malvern, PA</span><br />
-Automation Engineer <span class="pull-right">October 2012 -- July 2015</span><br />
+**EZSoft, Inc.** <span class="pull-right">Malvern, PA, USA</span><br />
+Automation Controls Engineer <span class="pull-right">October 2012 -- July 2015</span><br />
 
-* Deployed to provide on-site support for the research and development group within a major pharmaceutical company.
+* Provided on-site support for the R\&D group at a major pharmaceutical company.
 
-  * Managed three projects for integrating new technologies into a prototype process.
-  * Recorded experiment data into a SQL database and used statistical analysis to develop further experiments and deliver presentations to superiors for project funding.
-
-* Developed the operator interface for a bakery with over twelve hundred I/O points spanning three synchronous Allen-Bradley PLCs.
+  * Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
+  * Recorded high-speed data into an SQL database and performed statistical analysis to inform future experiment plans.
 
 <br />
-**US Liner Company** <span class="pull-right">Cranberry Twp, PA</span><br />
+**US Liner Company** <span class="pull-right">Cranberry Twp, PA, USA</span><br />
 Research Engineer Internship <span class="pull-right">January 2012 -- May 2012</span><br />
 
 <br />
-**Chemical Engr. Dept., University of Pittsburgh** <span class="pull-right">Pittsburgh, PA</span><br />
+**Chemical Engr. Dept., University of Pittsburgh** <span class="pull-right">Pittsburgh, PA, USA</span><br />
 Process Control Engineer Internship <span class="pull-right">May 2011 -- December 2011</span><br />
+
+* Rewrote LabView control systems for 6 chemical engineering lab experiments.
 
 
 ## Research
 <hr>
 
-**Carnegie Mellon University** <span class="pull-right">Pittsburgh, PA</span><br />
+**Carnegie Mellon University** <span class="pull-right">Pittsburgh, PA, USA</span><br />
 Master's Thesis, Advisor: Prof. John Kitchin <span class="pull-right">January 2015 -- December 2016</span><br />
 Title: A neural network potential for nanoporous graphene.
 
-* Performed ab initio molecular simulations on a stochastic sampling of nanopores in graphene in order to train a neural network potential suitable for dynamic simulations.
-* Code for simulations and neural network training were written in Python and executed in parallel on a Linux-based distributed computing cluster.
+* Performed molecular simulations on nanoporous graphene to train a feedforward neural network capable of replicating a Density Functional Theory exchange potential.
 <br />
 
 ## Education
 <hr>
 
 **Carnegie Mellon University** <span class="pull-right">December 2016</span><br />
-Master of Science in Chemical Engineering<br />
+Master of Science in Chemical Engineering. 4.0/4.0.<br />
 
 <br />
 **University of Pittsburgh** <span class="pull-right">April 2012</span><br />
-Bachelor of Science in Chemical Engineering<br />
+Bachelor of Science in Chemical Engineering. Minor in Computer Science. 3.3/4.0.<br />
 
-* Minor in Computer Science
+<br />
+
+## Skills
+<hr>
+
+**Expertise:** Proficient in Object Oriented Programming, Networking and Communication of Factory Controls Systems, Process Modeling and Optimization. Familiar with Machine Learning, Front-end Browser Development.
+<br />
+<br />
+**Software:** Proficient in UNIX, Git, MySQL, Ansible, Jenkins, JIRA, Confluence, Ignition, Siemens TIA, Rockwell Studio. Familiar with Kubernetes, Docker, Kafka, React.
+<br />
+<br />
+**Programming Languages:** Proficient in Python, Golang, SQL, C\#, Java, MATLAB, LabView, HTML, CSS, \LaTeX. Familiar with JavaScript, C{}\verb!++!, VBA.
 <br />
 
 ## Certificates
@@ -79,23 +97,4 @@ Bachelor of Science in Chemical Engineering<br />
 
 **Fundamentals of Engineering Exam (EIT)** <span class="pull-right">April 2012</span>
 
-## Skills
-<hr>
-
-**Expertise:** Process Control, Statistical Data Analysis, Process Optimization, Mathematical Modeling, Object Oriented Programming, Unix/Linux Environments.
-<br />
-<br />
-**Software:** RSLogix, FactoryTalk View, Virtual Machines, SQL Server, Microsoft Office, SciPy, Git, Google Apps, COMSOL, ASPEN Plus.
-<br />
-<br />
-**Programming languages:** Proficient in C#, PLC Ladder Logic, Python, Java, MATLAB, LabView, HTML, CSS, LaTeX. Familiar with C++, SQL, Go, VBA.
-<br />
-
-## Affiliations
-<hr>
-
-**American Institute of Chemical Engineers** <span class="pull-right">Member, 2010 -- Present</span>
-<br />
-**Order of the Engineer** <span class="pull-right">Member, 2012 -- Present</span>
-<br />
 </div>
