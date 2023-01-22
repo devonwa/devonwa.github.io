@@ -57,9 +57,9 @@ title: CV
 <br />
 
 
-<!-- 
+
 <br />
--->
+
 
 **EZSoft, Inc.** <span class="pull-right">Malvern, PA</span><br />
 <i>Automation Engineer <span class="pull-right">October 2012 -- July 2015</span></i><br />
@@ -67,16 +67,16 @@ title: CV
 <br />
 
 
-<!-- 
+
 <br />
--->
+
 
 **Chemical Engr. Dept., University of Pittsburgh** <span class="pull-right">Pittsburgh, PA</span><br />
 <i>Process Control Engineer Internship <span class="pull-right">May 2011 -- December 2011</span></i><br />
 
 
-<!-- 
--->
+
+
 
 
 <!-- 
