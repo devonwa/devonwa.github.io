@@ -51,7 +51,7 @@ title: CV
 
 <i>Automation Engineer <span class="pull-right">May 2017 -- April 2018</span></i><br />
 * <b>Leadership</b>: Led a team of 7 engineers managing 6 foreign suppliers to deliver the control system of the Vehicle Paint Shop for the company's first international factory in Shanghai.
-* <b>Design Architect</b>: Drafted an electrical and network architecture specification and managed its execution by 8 automation engineers leading 14 suppliers of Drive Unit production lines (~\$100M\verb!+!) to three factories on three continents.
+* <b>Design Architect</b>: Drafted an electrical and network architecture specification and managed its execution by 8 automation engineers leading 14 suppliers of Drive Unit production lines (~\$100M+) to three factories on three continents.
 * <b>Abstraction</b>: Redesigned PLC MES libraries to make transaction implementations transparent to machine process implementations.
 * <b>Management</b>: Mentored a team of 7 direct reports and conducted over 150 interviews.
 <br />
@@ -92,7 +92,7 @@ title: CV
 **Carnegie Mellon University** <span class="pull-right">Pittsburgh, PA</span><br />
 <i>Master of Science in Chemical Engineering 4.0/4.0. <span class="pull-right">December 2016</span></i><br />
 
-* **Machine Learning**: Thesis involved performing hundreds of molecular simulations on nanoporous graphene to train a feedforward neural network to replicate a Density Functional Theory exchange potential, reducing future simulation times by >99\%.
+* **Machine Learning**: Thesis involved performing hundreds of molecular simulations on nanoporous graphene to train a feedforward neural network to replicate a Density Functional Theory exchange potential, reducing future simulation times by >99%.
 
 <br />
 
